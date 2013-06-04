@@ -18,6 +18,10 @@
 		8BF7F1B8175C7F0C005ADD36 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7F1B7175C7F0C005ADD36 /* Default-568h@2x.png */; };
 		8BF7F1BB175C7F0C005ADD36 /* SMPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7F1BA175C7F0C005ADD36 /* SMPViewController.m */; };
 		8BF7F1BE175C7F0C005ADD36 /* SMPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7F1BC175C7F0C005ADD36 /* SMPViewController.xib */; };
+		8BF7F1C5175C8356005ADD36 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF7F1C4175C8356005ADD36 /* AVFoundation.framework */; };
+		8BF7F1C7175C8749005ADD36 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF7F1C6175C8749005ADD36 /* MediaPlayer.framework */; };
+		8BF7F1CB175DF367005ADD36 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7F1CA175DF367005ADD36 /* icon.png */; };
+		8BF7F1CD175DF36B005ADD36 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7F1CC175DF36B005ADD36 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,10 @@
 		8BF7F1B9175C7F0C005ADD36 /* SMPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMPViewController.h; sourceTree = "<group>"; };
 		8BF7F1BA175C7F0C005ADD36 /* SMPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMPViewController.m; sourceTree = "<group>"; };
 		8BF7F1BD175C7F0C005ADD36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SMPViewController.xib; sourceTree = "<group>"; };
+		8BF7F1C4175C8356005ADD36 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8BF7F1C6175C8749005ADD36 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		8BF7F1CA175DF367005ADD36 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		8BF7F1CC175DF36B005ADD36 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BF7F1C7175C8749005ADD36 /* MediaPlayer.framework in Frameworks */,
+				8BF7F1C5175C8356005ADD36 /* AVFoundation.framework in Frameworks */,
 				8BF7F1A2175C7F0C005ADD36 /* UIKit.framework in Frameworks */,
 				8BF7F1A4175C7F0C005ADD36 /* Foundation.framework in Frameworks */,
 				8BF7F1A6175C7F0C005ADD36 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +83,8 @@
 		8BF7F1A0175C7F0C005ADD36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8BF7F1C6175C8749005ADD36 /* MediaPlayer.framework */,
+				8BF7F1C4175C8356005ADD36 /* AVFoundation.framework */,
 				8BF7F1A1175C7F0C005ADD36 /* UIKit.framework */,
 				8BF7F1A3175C7F0C005ADD36 /* Foundation.framework */,
 				8BF7F1A5175C7F0C005ADD36 /* CoreGraphics.framework */,
@@ -96,6 +108,8 @@
 		8BF7F1A8175C7F0C005ADD36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8BF7F1CA175DF367005ADD36 /* icon.png */,
+				8BF7F1CC175DF36B005ADD36 /* icon@2x.png */,
 				8BF7F1A9175C7F0C005ADD36 /* StreamingMusicPlayer-Info.plist */,
 				8BF7F1AA175C7F0C005ADD36 /* InfoPlist.strings */,
 				8BF7F1AD175C7F0C005ADD36 /* main.m */,
@@ -164,6 +178,8 @@
 				8BF7F1B6175C7F0C005ADD36 /* Default@2x.png in Resources */,
 				8BF7F1B8175C7F0C005ADD36 /* Default-568h@2x.png in Resources */,
 				8BF7F1BE175C7F0C005ADD36 /* SMPViewController.xib in Resources */,
+				8BF7F1CB175DF367005ADD36 /* icon.png in Resources */,
+				8BF7F1CD175DF36B005ADD36 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +280,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StreamingMusicPlayer/StreamingMusicPlayer-Prefix.pch";
 				INFOPLIST_FILE = "StreamingMusicPlayer/StreamingMusicPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -275,6 +292,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StreamingMusicPlayer/StreamingMusicPlayer-Prefix.pch";
 				INFOPLIST_FILE = "StreamingMusicPlayer/StreamingMusicPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -299,6 +317,7 @@
 				8BF7F1C3175C7F0C005ADD36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
